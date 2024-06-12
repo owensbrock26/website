@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import TrimFit from './TrimFit/TrimFit';
+import LeadsGiant from './leadsgiant/LeadsGiant';
+import Home from './Home'; // import the Home component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <nav className="navbar">
+          <Link to="/">Home</Link> {/* Change the link to '/' */}
+          <Link to="/trimfit">TrimFit</Link>
+          <Link to="/leadsgiant">Leads Giant</Link>
+        </nav>
+        <Routes>
+          <Route path="/trimfit/*" element={<TrimFit />} />
+          <Route path="/leadsgiant" element={<LeadsGiant />} />
+          <Route path="/*" element={<Home />} /> {/* Change the route to '/*' */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

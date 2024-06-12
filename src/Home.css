@@ -1,0 +1,7 @@
+/* Home.css */
+.home {
+  background-image: url("./assets/TempHome.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}

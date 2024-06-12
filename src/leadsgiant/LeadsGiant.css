@@ -1,0 +1,17 @@
+.leads-giant {
+  background-image: url('../assets/LeadsGiantComingSoon.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start; /* aligns items to the start of the container, i.e., to the left */
+  align-items: flex-start; /* aligns items to the start of the cross axis, i.e., to the top */
+  padding-left: 50px; /* adds some space to the left of the timer */
+  padding-top: 20px; /* moves the timer slightly down */
+}
+
+.timer {
+  font-size: 3em; /* increases the font size */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
