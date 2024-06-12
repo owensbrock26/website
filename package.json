@@ -30,6 +30,15 @@
       "react-app/jest"
     ]
   },
+  "resolutions": {
+    "nth-check": "2.0.1",
+    "css-select": "4.1.3",
+    "svgo": "2.3.1",
+    "@svgr/plugin-svgo": "6.1.0",
+    "@svgr/webpack": "6.1.0",
+    "postcss": "8.4.4",
+    "resolve-url-loader": "4.0.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
